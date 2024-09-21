@@ -206,7 +206,7 @@ const ServicesPage = () => {
       </main>
 
       <footer className="bg-indigo-900 text-white py-12">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container pl-10 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">LoanPro</h3>
             <p>Your trusted partner in financial solutions.</p>
