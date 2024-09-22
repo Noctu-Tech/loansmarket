@@ -12,9 +12,9 @@ import FAQPage from "../components/FAQPage";
 function Home() {
   return (
     <div className="h-full w-full flex flex-col gap-3 bg-blue-100">
-      <div>
-        <AppBar />
-      </div>{" "}
+      <nav className=" text-white p-4 sticky -top-16 z-50 backdrop-blur-3xl rounded-3xl">
+       <AppBar/>
+      </nav>
       <div className="w-full h-full">
         <HeroSection />
       </div>

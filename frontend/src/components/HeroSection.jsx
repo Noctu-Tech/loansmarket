@@ -7,21 +7,18 @@ import home1 from '../assets/carloan.jpg';
 const HeroSection = () => {
   return (
     <div className="w-full flex flex-col lg:flex-row h-screen rounded-3xl">
-      <div className="w-full lg:w-1/2 font-bold flex flex-col justify-center gap-4 p-4 text-left h-screen text-[#55555a]">
+      <div className="w-full lg:w-1/2 font-bold flex flex-col justify-center gap-4 p-4 text-left h-screen text-blue-900">
         <span className="text-lg">Unlock Your Financial Freedom</span>
         <span className="text-3xl lg:text-5xl">Welcome to India’s Premier Loan Marketplace</span>
         <p className="text-sm lg:text-base">
           At Loan Market, we simplify your journey to financial solutions. Whether you’re looking to purchase a new home, fund your dream car, or grow your business, we’ve got you covered. Explore tailored loan options designed just for you. Our seamless process and expert guidance ensure you find the best rates and terms, empowering you to make informed decisions with confidence.
         </p>
-        <div className="w-fit h-fit m-3 rounded-lg text-blue-900 text-xl flex justify-evenly place-items-center mt-11">
+        <div className="w-fit h-fit m-3 rounded-lg text-zinc-200 bg-indigo-900 text-xl flex justify-evenly place-items-center mt-11">
           <button className="flex gap-4 h-full w-full p-2">
             Book a Call
             <div className="w-fit h-fit text-lg">
               <span className="relative flex h-10 w-10">
-                <span className="animate-ping absolute inline-flex h-10 w-10 rounded-full bg-sky-900 opacity-75"></span>
-                <span className="relative flex rounded-full h-10 w-10 bg-sky-900 text-lg text-white justify-center items-center">
                   <ArrowOutwardIcon />
-                </span>
               </span>
             </div>
           </button>

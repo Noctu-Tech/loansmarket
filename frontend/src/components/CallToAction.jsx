@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CallToAction = () => {
-  return (<div><div className='h-full w-full rounded-2xl z-[999] bg-blue-900 flex flex-col justify-center items-center text-center p-10'>
+  return (<div className=""><div className='h-full w-full rounded-2xl z-[999] bg-blue-900 flex flex-col justify-center items-center text-center p-10'>
     <h2 className='text-3xl font-bold text-white mb-4'>
       Find the Right Loan for You
     </h2>

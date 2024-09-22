@@ -1,8 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-const ServiceCard = ({ service }) => (
-  <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105">
+const ServiceCard = ({ service,action }) => (
+  <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105 hover:cursor-pointer" onClick={action}>
     <div className="p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{service}</h3>
       <p className="text-gray-600 mb-4">Explore our {service.toLowerCase()} options tailored to your needs.</p>
@@ -14,7 +15,12 @@ const ServiceCard = ({ service }) => (
   </div>
 );
 
+
 const Services = () => {
+  const navigate=useNavigate()
+  const handleAction=()=>{
+    navigate('/services')
+  }
   const services = [
     "Home Loan",
     "Car Loan",
@@ -33,7 +39,7 @@ const Services = () => {
         <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">Explore Our Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <ServiceCard key={index} service={service} action={handleAction} />
           ))}
         </div>
       </div>

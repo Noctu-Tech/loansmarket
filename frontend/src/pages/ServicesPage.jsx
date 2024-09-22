@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, FileText, CheckCircle, DollarSign, PhoneCall, Briefcase, Home, Shield, BadgeCheck, AlertCircle } from 'lucide-react';
-
+import Footer from '../components/Footer'
+import AppBar from '../components/AppBar';
 const ServiceCard = ({ title, icon, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-indigo-500">
     <div className="flex items-center mb-4">
@@ -22,18 +23,8 @@ const FeatureCard = ({ icon, title, description }) => (
 const ServicesPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <nav className="bg-indigo-900 text-white p-4 sticky top-0 z-50">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-xl font-bold">LoanPro</div>
-          <div className="space-x-4">
-            <a href="#" className="hover:text-indigo-200">Services</a>
-            <a href="#" className="hover:text-indigo-200">About</a>
-            <a href="#" className="hover:text-indigo-200">Testimonials</a>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
-              Contact Us
-            </button>
-          </div>
-        </div>
+      <nav className=" text-white p-4 sticky -top-16 z-50 backdrop-blur-3xl rounded-3xl">
+       <AppBar/>
       </nav>
 
       <header className="bg-gradient-to-r from-indigo-800 to-blue-700 text-white py-24 text-center">
@@ -205,33 +196,7 @@ const ServicesPage = () => {
         </section>
       </main>
 
-      <footer className="bg-indigo-900 text-white py-12">
-        <div className="container pl-10 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">LoanPro</h3>
-            <p>Your trusted partner in financial solutions.</p>
-          </div>
-          <div>
-            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-indigo-300">About Us</a></li>
-              <li><a href="#" className="hover:text-indigo-300">Services</a></li>
-              <li><a href="#" className="hover:text-indigo-300">FAQs</a></li>
-              <li><a href="#" className="hover:text-indigo-300">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
-            <p>1234 Loan Street, Financial District</p>
-            <p>City, State 12345</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: info@loanpro.com</p>
-          </div>
-        </div>
-        <div className="mt-8 text-center">
-          <p>&copy; 2024 LoanPro Services. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 };

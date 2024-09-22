@@ -64,8 +64,8 @@ const AppBar = () => {
 
         {/* Menu links (Desktop and larger screens) */}
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <a href="#">Services</a>
-          <a href="#">About</a>
+          <a href="/services">Services</a>
+          <a href="/about">About</a>
           <a href="#">Testimonials</a>
         </div>
 

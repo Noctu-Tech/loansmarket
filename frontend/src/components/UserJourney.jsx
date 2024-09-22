@@ -40,14 +40,14 @@ const UserJourney = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-gray-200 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">
+    <div className="bg-gradient-to-b from-gray-50 to-gray-200">
+      <div className="max-w-5xl">
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12 py-12">
           Your Loan Journey
         </h2>
         <div className="relative">
-          <div className="absolute inset-y-0 left-0 bg-gradient-to-r from-gray-50 to-transparent w-10 z-10"></div>
-          <div className="absolute inset-y-0 right-0 bg-gradient-to-l from-gray-50 to-transparent w-10 z-10"></div>
+          {/* <div className="absolute inset-y-0 left-0 bg-gradient-to-r from-gray-50 to-transparent w-10 z-10"></div>
+          <div className="absolute inset-y-0 right-0 bg-gradient-to-l from-gray-50 to-transparent w-10 z-10"></div> */}
           <div className="overflow-x-auto pb-6 scrollbar-hide">
             <div className="flex justify-evenly">
               {steps.map((step, index) => (
