@@ -5,7 +5,7 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200 py-4 bg-white rounded-xl">
+    <div className="border-b border-blue-700 py-4  rounded-xl ">
       <button
         className="flex justify-between items-center w-full text-left"
         onClick={() => setIsOpen(!isOpen)}
@@ -72,13 +72,14 @@ const FAQPage = () => {
   
 
   return (
-    <div className="max-w-2xl mx-auto p-4">
+    <div className="max-w-2xl mx-auto p-4 text-blue-950">
       <h1 className="text-3xl font-bold mb-6">Frequently Asked Questions</h1>
-      <div className="space-y-2 grid grid-cols-2 gap-2">
+      <div className="space-y-2">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
+      
     </div>
   );
 };

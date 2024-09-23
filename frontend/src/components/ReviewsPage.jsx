@@ -63,8 +63,8 @@ const ReviewsPage = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="flex gap-4 overflow-auto">
+    <div className="max-w-7xl h-full mx-auto p-3">
+      <div className="flex gap-4 overflow-auto z-[999] h-full">
         {reviews.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}

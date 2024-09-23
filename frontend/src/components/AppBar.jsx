@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import './AppBar.css';
 import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import insta from "../assets/insta.svg";
-import twitter from "../assets/twitterx.svg";
-import whatsapp from "../assets/whatsapp.svg";
+
 const AppBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,8 +62,8 @@ const AppBar = () => {
         {/* Menu links (Desktop and larger screens) */}
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <a href="/services">Services</a>
-          <a href="/about">About</a>
-          <a href="#">Testimonials</a>
+          <a href="/emi">EMI Calculator</a>
+          <a href="/apply">Apply Now</a>
         </div>
 
         {/* Button (Desktop and larger screens) */}
@@ -86,9 +83,9 @@ const AppBar = () => {
 
       {/* Mobile Menu (Visible when `isOpen` is true) */}
       <div className={`navbar-mobile-links ${isOpen ? 'open' : ''}`}>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Testimonials</a>
+      <a href="/services">Services</a>
+          <a href="/emi">EMI Calculator</a>
+          <a href="/apply">Apply Now</a>
         <button className="mobile-contact">Contact Us</button>
       </div>
     </nav>

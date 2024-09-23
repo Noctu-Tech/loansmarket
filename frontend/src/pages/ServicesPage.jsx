@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileText, CheckCircle, DollarSign, PhoneCall, Briefcase, Home, Shield, BadgeCheck, AlertCircle } from 'lucide-react';
+import { ArrowRight, FileText, CheckCircle, IndianRupee, PhoneCall, Briefcase, Home, Shield, BadgeCheck, AlertCircle } from 'lucide-react';
 import Footer from '../components/Footer'
 import AppBar from '../components/AppBar';
 const ServiceCard = ({ title, icon, description }) => (
@@ -23,7 +23,7 @@ const FeatureCard = ({ icon, title, description }) => (
 const ServicesPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <nav className=" text-white p-4 sticky -top-16 z-50 backdrop-blur-3xl rounded-3xl">
+      <nav className=" text-white sticky -top-16 z-50 backdrop-blur-3xl rounded-3xl">
        <AppBar/>
       </nav>
 
@@ -38,7 +38,7 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               title="Personal Loans"
-              icon={<DollarSign className="text-indigo-600" size={32} />}
+              icon={<IndianRupee className="text-indigo-600" size={32} />}
               description="Whether it's for debt consolidation, home improvements, or unexpected expenses, our personal loans offer competitive rates and flexible terms to suit your lifestyle."
             />
             <ServiceCard
@@ -53,7 +53,7 @@ const ServicesPage = () => {
             />
             <ServiceCard
               title="Auto Loans"
-              icon={<DollarSign className="text-indigo-600" size={32} />}
+              icon={<IndianRupee className="text-indigo-600" size={32} />}
               description="Drive away in your dream car with our competitive auto loan rates. New or used, we have financing options to get you on the road."
             />
             <ServiceCard
@@ -99,7 +99,7 @@ const ServicesPage = () => {
                 <h3 className="text-2xl font-semibold mb-4">Personal Loans</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Age: 21-65 years old</li>
-                  <li>Minimum income: $30,000 per annum</li>
+                  <li>Minimum income: ₹30,000 per annum</li>
                   <li>Credit score: 650 or higher</li>
                   <li>Employment: Minimum 2 years of work experience</li>
                   <li>Residency: Must be a permanent resident or citizen</li>
@@ -109,7 +109,7 @@ const ServicesPage = () => {
                 <h3 className="text-2xl font-semibold mb-4">Business Loans</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Business age: At least 2 years in operation</li>
-                  <li>Annual revenue: Minimum $100,000</li>
+                  <li>Annual revenue: Minimum ₹100,000</li>
                   <li>Credit score: 680 or higher for primary business owner</li>
                   <li>Documentation: Business plan and financial statements required</li>
                 </ul>
@@ -131,7 +131,7 @@ const ServicesPage = () => {
             />
             <ServiceCard
               title="Proof of Income"
-              icon={<DollarSign className="text-indigo-600" size={32} />}
+              icon={<IndianRupee className="text-indigo-600" size={32} />}
               description="Recent pay stubs (last 3 months), tax returns (last 2 years), or bank statements (last 6 months) showing consistent income."
             />
             <ServiceCard
@@ -161,23 +161,23 @@ const ServicesPage = () => {
           <h2 className="text-4xl font-bold mb-12 text-center">Loan Examples</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-indigo-500">
-              <h3 className="text-2xl font-semibold mb-4">Personal Loan: $25,000</h3>
+              <h3 className="text-2xl font-semibold mb-4">Personal Loan: ₹25,000</h3>
               <ul className="space-y-3">
                 <li><strong>Interest Rate:</strong> 7.5% APR</li>
                 <li><strong>Loan Term:</strong> 5 years</li>
-                <li><strong>Monthly Payment:</strong> $500.57</li>
-                <li><strong>Total Interest Paid:</strong> $5,034.20</li>
-                <li><strong>Total Amount Repaid:</strong> $30,034.20</li>
+                <li><strong>Monthly Payment:</strong> ₹500.57</li>
+                <li><strong>Total Interest Paid:</strong> ₹5,034.20</li>
+                <li><strong>Total Amount Repaid:</strong> ₹30,034.20</li>
               </ul>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
-              <h3 className="text-2xl font-semibold mb-4">Business Loan: $100,000</h3>
+              <h3 className="text-2xl font-semibold mb-4">Business Loan: ₹100,000</h3>
               <ul className="space-y-3">
                 <li><strong>Interest Rate:</strong> 6.5% APR</li>
                 <li><strong>Loan Term:</strong> 7 years</li>
-                <li><strong>Monthly Payment:</strong> $1,498.12</li>
-                <li><strong>Total Interest Paid:</strong> $25,841.82</li>
-                <li><strong>Total Amount Repaid:</strong> $125,841.82</li>
+                <li><strong>Monthly Payment:</strong> ₹1,498.12</li>
+                <li><strong>Total Interest Paid:</strong> ₹25,841.82</li>
+                <li><strong>Total Amount Repaid:</strong> ₹125,841.82</li>
               </ul>
             </div>
           </div>

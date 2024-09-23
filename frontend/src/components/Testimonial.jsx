@@ -24,7 +24,7 @@ const Testimonial = () => {
   return (
     <div className="min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-bold text-center text-gray-800 mb-16">
+        <h1 className="text-5xl font-bold text-center text-blue-800 mb-16">
           Our Success Stories
         </h1>
         <div className="flex">
@@ -42,7 +42,7 @@ const Testimonial = () => {
           {/* Reviews Section */}
           <div className="lg:col-span-1 row-span-2 rounded-2xl shadow-xl overflow-hidden flex flex-col justify-center">
             <div className="p-6">
-              <h2 className="text-3xl font-semibold text-gray-700 mb-4 text-center">
+              <h2 className="text-3xl font-semibold text-gray-700 mb-2 text-center">
                 What Our Clients Say
               </h2>
               <div className="h-full w-full overflow-y-auto scrollbar-hide">
