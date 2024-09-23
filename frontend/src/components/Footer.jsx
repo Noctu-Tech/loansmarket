@@ -6,9 +6,9 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 const Footer = () => {
   return (
-    <div className="h-full w-full text-white">
-      <div className="h-full bg-cover bg-indigo-950">
-        <footer className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 md:p-8 bg-opacity-80">
+    <div className="h-full w-full text-white m">
+      <div className="h-full pt-8 bg-indigo-950">
+        <footer className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-opacity-80">
           <div className="flex flex-col items-start">
             <h1 className="text-3xl md:text-4xl font-extrabold text-zinc-200 mb-4">Loan Market</h1>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-4">

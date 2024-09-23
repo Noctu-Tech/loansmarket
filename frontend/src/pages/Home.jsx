@@ -24,7 +24,7 @@ function Home() {
       <div className="w-full h-full ">
         <UserJourney />
       </div>
-      <div className="w-full h-80">
+      <div className="w-full h-2/3">
         <Partners />
       </div>
       <div className="w-full h-full">
@@ -33,10 +33,10 @@ function Home() {
       <div className="w-full h-full">
         <Testimonial />
       </div>
-      <div className="h-4/5 w-s">
+      <div className="h-full w-full">
         <FAQPage />
       </div>
-      <div className="w-full h-2/3">
+      <div className="w-full h-full">
         <CallToAction />
       </div>
       <div className="w-full h-full">

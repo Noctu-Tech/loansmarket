@@ -8,7 +8,7 @@ const WhyUs = () => {
         Why Choose Us?
       </div>
 
-      <div className='w-full h-auto sm:flex flex-1 gap-6'>
+      <div className='w-full h-auto lg:flex flex-1 gap-6'>
         {/* Cash Rewards */}
         <div className='w-full h-full flex justify-center items-center p-4'>
           <div className='w-full h-full rounded-xl bg-white shadow-lg flex flex-col text-center text-3xl p-6 transition-transform transform hover:scale-105'>

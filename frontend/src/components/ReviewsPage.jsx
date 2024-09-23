@@ -19,7 +19,7 @@ const StarRating = ({ rating }) => {
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className="bg-white p-8 rounded-3xl shadow-lg transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+    <div className="bg-white p-6 h-fit rounded-3xl shadow-lg transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
       <div className="flex items-center mb-6">
         <div className="bg-gray-300 rounded-full p-3 mr-4">
           <User className="h-10 w-10 text-gray-600" />
@@ -63,8 +63,8 @@ const ReviewsPage = () => {
   ];
 
   return (
-    <div className="max-w-7xl h-full mx-auto p-3">
-      <div className="flex gap-4 overflow-auto z-[999] h-full">
+    <div className="max-w-7xl h-full mx-auto p-3 flex flex-col lg:flex-1 ">
+      <div className="flex gap-4 overflow-auto h-full flex-col lg:flex-row items-center">
         {reviews.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}

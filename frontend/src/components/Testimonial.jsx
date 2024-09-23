@@ -22,12 +22,12 @@ const StatCard = ({ icon: Icon, count, text }) => (
 
 const Testimonial = () => {
   return (
-    <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto">
+    <div className="">
+      <div className="max-w-7xl mx-auto flex flex-col">
         <h1 className="text-5xl font-bold text-center text-blue-800 mb-16">
           Our Success Stories
         </h1>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
           {/* Stat Card 1 */}
          <div className="gap-5 flex flex-col"> <StatCard 
             icon={ThumbsUp} 
@@ -40,12 +40,12 @@ const Testimonial = () => {
             text="Loan Applications Approved"
           /></div>
           {/* Reviews Section */}
-          <div className="lg:col-span-1 row-span-2 rounded-2xl shadow-xl overflow-hidden flex flex-col justify-center">
+          <div className=" rounded-2xl shadow-xl overflow-hidden flex flex-col justify-center">
             <div className="p-6">
               <h2 className="text-3xl font-semibold text-gray-700 mb-2 text-center">
                 What Our Clients Say
               </h2>
-              <div className="h-full w-full overflow-y-auto scrollbar-hide">
+              <div className="h-full w-full overflow-y-auto scrollbar-hide flex flex-col">
                 <Reviews />
               </div>
             </div>

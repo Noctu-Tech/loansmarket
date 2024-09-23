@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 *{
+ 
  scrollbar-width: thin;
  scroll-behavior: smooth;
  scrollbar-color: #013c6d,rgb(1,75,110);

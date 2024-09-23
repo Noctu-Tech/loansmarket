@@ -10,8 +10,9 @@ const JourneyStep = ({ icon: Icon, title, description, isLast }) => (
       <h3 className="text-2xl font-semibold mb-4 text-gray-800">{title}</h3>
       <p className="text-gray-600 flex-grow text-center leading-relaxed">{description}</p>
       {!isLast && (
-        <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2">
-          <div className="w-6 h-6 rounded-full bg-blue-300 flex items-center justify-center">
+        <div className="absolute lg:right-0 h-fit lg:top-1/2 transform lg:translate-x-1/2 lg:-translate-y-1/2
+        bottom-0 translate-y-1/2">
+          <div className="h-6 w-6 rounded-full bg-blue-300 flex items-center justify-center ">
             <div className="w-2 h-2 rounded-full bg-blue-600"></div>
           </div>
         </div>
@@ -49,7 +50,7 @@ const UserJourney = () => {
           <div className="absolute inset-y-0 left-0 bg-gradient-to-r from-gray-50 to-transparent w-10 z-10"></div>
           <div className="absolute inset-y-0 right-0 bg-gradient-to-l from-gray-50 to-transparent w-10 z-10"></div>
           <div className="overflow-x-auto pb-6 scrollbar-hide">
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly  flex-col lg:flex-row gap-10">
               {steps.map((step, index) => (
                 <JourneyStep
                   key={index}
