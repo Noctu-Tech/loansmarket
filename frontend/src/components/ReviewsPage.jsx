@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star, User } from 'lucide-react';
-
+import review from '../info/reviews.json';
 const StarRating = ({ rating }) => {
   return (
     <div className="flex overflow-auto">
@@ -38,29 +38,7 @@ const ReviewCard = ({ review }) => {
 };
 
 const ReviewsPage = () => {
-  const reviews = [
-    {
-      id: 1,
-      name: "John Doe",
-      date: "March 15, 2024",
-      rating: 4,
-      text: "Great product! It exceeded my expectations. The quality is top-notch and the customer service was excellent."
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      date: "March 10, 2024",
-      rating: 5,
-      text: "Absolutely love it! This is exactly what I was looking for. The attention to detail is impressive."
-    },
-    {
-      id: 3,
-      name: "Mike Johnson",
-      date: "March 5, 2024",
-      rating: 3,
-      text: "Decent product, but there's room for improvement. The delivery was quick, though."
-    },
-  ];
+  const reviews = review;
 
   return (
     <div className="max-w-7xl h-full mx-auto p-3 flex flex-col lg:flex-1 ">

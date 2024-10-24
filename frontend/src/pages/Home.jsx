@@ -11,8 +11,8 @@ import UserJourney from "../components/UserJourney";
 import FAQPage from "../components/FAQPage";
 function Home() {
   return (
-    <div className="h-full w-full flex flex-col gap-3 bg-blue-100">
-      <nav className=" text-white sticky -top-16 z-50 backdrop-blur-3xl rounded-3xl">
+    <div className="h-full w-full flex flex-col gap-10 bg-blue-200 p-0 m-0">
+      <nav className=" text-white sticky -top-16 z-50 bg-white rounded-3xl p-0 m-0">
        <AppBar/>
       </nav>
       <div className="w-full h-full">
@@ -24,7 +24,7 @@ function Home() {
       <div className="w-full h-full ">
         <UserJourney />
       </div>
-      <div className="w-full h-2/3">
+      <div className="w-full h-72">
         <Partners />
       </div>
       <div className="w-full h-full">

@@ -29,7 +29,7 @@ function ApplyForm() {
         ...location.state, // Fill the fields from the EMI Calculator state
       }));
     }
-  }, [location.state]);
+  }, [location.state]);  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
